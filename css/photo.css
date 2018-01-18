@@ -1,0 +1,836 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+}
+ul li{
+    position: relative;
+    float: left;
+    width: 33.333%;
+    height: 350px;
+    overflow: hidden;
+}
+ul li:nth-child(1) h3{
+    color:white;
+    position: absolute;
+    bottom:30%;
+    left:5%;
+    font-size: 28px;
+    font-weight: 400;
+    z-index: 2;
+    transition: bottom 0.3s;
+}
+ul li:nth-child(3) h3{
+    color:white;
+    position: absolute;
+    bottom:30%;
+    left:5%;
+    font-size: 28px;
+    font-weight: 400;
+    z-index: 2;
+    transition: bottom 0.3s;
+}
+ul li:nth-child(1) h3 span,ul li:nth-child(2) h3 span{
+    font-size: 30px;
+    font-weight: bolder;
+}
+ul li:nth-child(1) p{
+    position: absolute;
+    bottom:22%;
+    left:5%;
+    color:#a4a5a8;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+ul li:nth-child(1) div,ul li:nth-child(2) div,ul li:nth-child(3) div{
+    width: 100%;
+    height: 100%;
+    background: #3085a3;
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+    transition: opacity 0.3s;
+}
+.header ul li:hover .ft1{
+   transform: translateX(40px);
+}
+.header ul li:hover  .one{
+    bottom:35%;
+}
+.header ul li:hover .ft1p{
+    bottom:28%;
+    opacity: 1;
+}
+.header ul li:hover .mc{
+    opacity: 0;
+}
+ul li:nth-child(2) div:nth-of-type(1){
+    opacity: 0.2;
+}
+ul li img{
+    width: 120%;
+    height: 120%;
+    display: block;
+    position: relative;
+}
+ul li:nth-child(1) img{
+    left:-40px;
+    transition: transform 0.3s;
+}
+ul li:nth-child(2) h3{
+    font-size: 27px;
+    color: #484c61;
+    font-weight: 400;
+    position: absolute;
+    top:40%;
+    left:30%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+ul li:nth-child(2){
+ text-align: center;
+}
+ul li:nth-child(2) p{
+    position: absolute;
+    left:20%;
+    bottom:20%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+}
+ul li:nth-child(2) div:nth-of-type(2){
+   width: 100%;
+    height: 100%;
+    position: absolute;
+    top:20%;
+    z-index: 0.5;
+    opacity: 0;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    transition:all 0.3s;
+}
+ul li:hover .twod{
+    opacity: 0.7;
+    top:0;
+}
+ul li:hover .two{
+    top:25%;
+    color:white;
+}
+ul li:hover .twop{
+    opacity: 1;
+    bottom: 22%;
+    color:white;
+}
+ul li:nth-child(3) h3 span:nth-of-type(1){
+    font-weight: bolder;
+}
+ul li:nth-child(3) h3 span:nth-of-type(2){
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+ul li:nth-child(3) hr{
+    width:100%;
+    height:7px;
+    position: absolute;
+    bottom:-11px;
+    border:2px solid white;
+    background: white;
+    transition: bottom 0.3s;
+}
+ul li:nth-child(3) div{
+    background: #4a3753;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+ul li:hover .threed{
+   opacity: 0.5;
+}
+ul li:hover .three{
+   bottom: 15%;
+}
+ul li:hover hr{
+    bottom:0;
+}
+ul li:hover .three span:nth-of-type(2){
+    opacity: 1;
+}
+ul li:nth-child(4){
+    text-align: center;
+}
+ul li:nth-child(4) h3{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top:30%;
+    left:25%;
+    font-weight: 400;
+    transition: top 0.6s;
+}
+ul li:nth-child(4) h3 span{
+    font-weight: bolder;
+}
+ul li:nth-child(4) p{
+    position: absolute;
+    top:50%;
+    left:20%;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.top_bm{
+    width: 50px;
+    height: 200px;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    position: absolute;
+    top:23%;
+    left:5%;
+    transform: scale(1,1);
+    transform-origin: left;
+    opacity: 0;
+    transition:all 0.2s;
+}
+.left_rg{
+    width: 350px;
+    height: 50px;
+    border-left:1px solid white;
+    border-right: 1px solid white;
+    position: absolute;
+    top:16%;
+    left:10%;
+    transform: scale(1,1);
+    transform-origin: top;
+    opacity: 0;
+    transition: all 0.3s;
+}
+ul li:nth-child(4) img{
+    width: 120%;
+    height: 120%;
+    position: relative;
+    top:-20px;
+    transition: all 0.6s;
+}
+ul li:hover .four1{
+   top:0;
+}
+ul li:hover .fourh3{
+    top:37%;
+}
+ul li:hover .left_rg{
+    opacity: 1;
+    transform: scale(1,5);
+}
+ul li:hover .top_bm{
+    opacity: 1;
+    transform: scale(8,1);
+}
+ul li:hover .fourp{
+    opacity: 1;
+}
+ul li:nth-child(5){
+    color: white;
+    text-align: center;
+}
+ul li:nth-child(5) p{
+    font-weight: bolder;
+    position: absolute;
+    top:50%;
+    left:16%;
+    z-index:1;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.mc5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background: #3085a3;
+    opacity: 0.3;
+}
+.bottom5{
+    width: 100%;
+    height: 80px;
+    background: white;
+    position: absolute;
+    bottom: -80px;
+    color: #4f7f90;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: left;
+    font-weight: bolder;
+    transition: bottom 0.6s;
+}
+.bottom5 h2{
+   margin-left: 5%;
+}
+.bottom5 h2 span{
+    color: black;
+}
+ul li:hover .fvp{
+    top:35%;
+    opacity: 1;
+}
+ul li:hover .bottom5{
+    bottom:0;
+}
+ul li:nth-child(6){
+    text-align: center;
+    color:white;
+}
+ul li:nth-child(6) h2{
+    position: absolute;
+    top:35%;
+    left:25%;
+    font-weight: 500;
+    font-size: 30px;
+    transition: top 0.6s;
+    z-index:1;
+}
+ul li:nth-child(6) h2 span{
+    font-weight: bolder;
+}
+.bkwb{
+    width: 80%;
+    height: 50%;
+    border:1px solid white;
+    position: absolute;
+    top:24%;
+    left:10%;
+    z-index: 1;
+    text-align: center;
+    transform: scale(0);
+    transition: transform 0.6s;
+}
+.bkwb p{
+    margin-top: 60px;
+}
+.mc6{
+    width: 100%;
+    height: 100%;
+    background: rgba(58,52,42,0.7);
+    position: absolute;
+    top:0;
+    opacity: 0.5;
+    transition: background 0.6s;
+}
+ul li:hover .bkwb{
+    transform: scale(1);
+}
+ul li:hover .h26{
+    top:28%;
+}
+ul li:hover .mc6{
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+}
+ul li:nth-child(7){
+    color: white;
+}
+ul li:nth-child(7) h2{
+    position: absolute;
+    top:20%;
+    left:40%;
+    font-size: 30px;
+    font-weight: 400;
+    transition: top 0.6s;
+}
+ul li:nth-child(7) h2 span{
+    font-weight: bolder;
+}
+.xian{
+    width: 80%;
+    height: 2px;
+    border:1px solid white;
+    background: white;
+    position: absolute;
+    top:40%;
+    left:9%;
+    opacity: 0;
+    transition: all 0.6s;
+}
+ul li:nth-child(7) p{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    text-align: right;
+    opacity: 0;
+    transition: all 0.6s;
+}
+ul li:hover .h27{
+    top:15%;
+}
+ul li:hover .xian{
+    opacity: 1;
+    top:30%;
+}
+ul li:hover .p7{
+    bottom:20%;
+    opacity: 1;
+}
+ul li:nth-child(8){
+    text-align: center;
+    color:white;
+    font-size:  26px;
+}
+ul li:nth-child(8) img{
+    width: 120%;
+    height: 120%;
+    transform: scale(1.2);
+    transition: transform 0.6s;
+}
+ul li:nth-child(8) h3{
+    position: absolute;
+    top: 35%;
+    left:25%;
+    font-weight: 500;
+    transition: top 0.6s;
+    z-index: 1;
+}
+ul li:nth-child(8) h3 span{
+    font-weight: bolder;
+}
+ul li:nth-child(8) .kuang8{
+    width: 80%;
+    height: 40%;
+    border:1px solid white;
+    position: absolute;
+    top:50%;
+    left:15%;
+    font-size: 20px;
+    text-align: center;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 0.6s;
+    z-index: 1;
+}
+ul li:nth-child(8) .kuang8 p{
+    margin-top:10%;
+}
+ul li:hover .h8{
+    top:25%;
+}
+ul li:hover .tu8{
+    transform: scale(1);
+}
+.mc8{
+    width: 100%;
+    height: 100%;
+    background: #4f7f90;
+    position: absolute;
+    top:0;
+    opacity: 0.4;
+    transition: opacity 0.6s;
+}
+ul li:hover .kuang8{
+    transform: scale(0.9);
+    opacity: 1;
+    top:45%;
+}
+ul li:hover .mc8{
+    opacity: 0.6;
+}
+ul li:nth-child(9){
+    color: white;
+}
+ul li:nth-child(9) h2{
+   position: absolute;
+    top:30%;
+    left:20%;
+    font-weight: 400;
+}
+ul li:nth-child(9) h2 span{
+    font-weight: bolder;
+}
+ul li:nth-child(9) img{
+    transform: scale(1.2);
+    left:0;
+    transition: all 0.6s;
+}
+.kuang9{
+    width: 80%;
+    height: 70%;
+    border:1px solid white;
+    position: absolute;
+    top:20%;
+    left:3%;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.6s;
+}
+.kuang9 p{
+    margin-top: 28%;
+}
+.mc9{
+    width: 100%;
+    height:100%;
+    background: #3085a3;
+    opacity: 0.1;
+    position: absolute;
+    top:0;
+    transition: all 0.4s;
+}
+ul li:hover .mc9{
+    background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);;
+    opacity: 0.2;
+}
+ul li:hover .kuang9{
+    opacity: 1;
+    left:8%;
+}
+ul li:hover .img9{
+    left:5%;
+}
+ul li:nth-child(10){
+    color: white;
+    text-align: center;
+}
+ul li:nth-child(10) h2{
+    position: absolute;
+    top:40%;
+    left:30%;
+    font-weight: 400;
+    z-index: 1;
+    transition: top 0.6s;
+}
+ul li:nth-child(10) h2 span{
+    font-weight: bold;
+}
+ul li:nth-child(10) p{
+    position: absolute;
+    top:60%;
+    left:20%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.bianxian{
+    width: 100px;
+    height: 200px;
+    border-top:1px solid white;
+    border-bottom: 1px solid white;
+    position: absolute;
+    top:20%;
+    left:37%;
+    z-index: 1;
+    transform: scale(0,1);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.bianxian1{
+    width: 300px;
+    height: 200px;
+    border-left:1px solid white;
+    border-right: 1px solid white;
+    position: absolute;
+    top:20%;
+    left:15%;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(1,0);
+    transition: all 0.3s;
+}
+.mc10{
+    width: 100%;
+    height: 100%;
+    background: #9e5406;
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+}
+ul li:hover .h10{
+    top:45%;
+}
+ul li:hover .p10{
+    opacity: 1;
+    top:55%;
+}
+ul li:hover .bianxian{
+     transform: scale(3,1);
+    opacity: 1;
+}
+ul li:hover .bianxian1{
+    transform: scale(1,1);
+    opacity: 1;
+}
+ul li:nth-child(11){
+    color:white;
+    text-align: center;
+}
+ul li:nth-child(11) h2{
+    position: absolute;
+    top:20%;
+    left:35%;
+    font-weight: 400;
+    transition: top 0.6s;
+}
+ul li:nth-child(11) h2 span{
+    font-weight: bolder;
+}
+.img11{
+    transform: scale(1.3);
+    transition: transform 0.6s;
+}
+.jiaocha,.jiaocha1{
+    width: 80%;
+    border:1px solid white;
+    position: absolute;
+    top:40%;
+    left:9%;
+}
+.jiaocha{
+    transform: rotate(0);
+    transition: transform 0.6s;
+}
+.jiaocha1{
+    transform:rotate(0);
+    transition: transform 0.6s;
+}
+.p11{
+    position: absolute;
+    bottom:30%;
+    left:14%;
+    transition: bottom 0.6s;
+}
+.mc11{
+    width: 100%;
+    height: 100%;
+    background: #4f7f90;
+    opacity: 0.2;
+    position: absolute;
+    top:0;
+    transition: opacity 0.6s;
+}
+ul li:hover .img11{
+    transform: scale(1);
+}
+ul li:hover .mc11{
+    opacity: 0.4;
+}
+ul li:hover .jiaocha{
+ transform: rotate(40deg);
+}
+ul li:hover .jiaocha1{
+    transform: rotate(-40deg);
+}
+ul li:hover .h11{
+    top:25%;
+}
+ul li:hover .p11{
+    bottom:35%;
+}
+ul li:nth-child(12){
+    color: white;
+    text-align: center;
+}
+ul li:nth-child(12) h2{
+    font-weight: 500;
+    font-size: 25px;
+    position: absolute;
+    top:20%;
+    left:30%;
+}
+.wenben12{
+    width: 80%;
+    height: 120px;
+    border:5px solid white;
+    position: absolute;
+    top:10%;
+    left:10%;
+    transition: top 0.6s;
+}
+.mc12{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,0.8) 75%, orange 100%);
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.wenben12 p{
+    margin-top: 20%;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+ul li:hover .wenben12{
+    top:40%;
+}
+ul li:hover .wenben12 p{
+    opacity: 1;
+}
+ul li:hover .mc12{
+    opacity: 0.3;
+}
+ul li:nth-child(13){
+    color: white;
+}
+.img13{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+}
+.h13{
+   position: absolute;
+    top:10%;
+    left:10%;
+    font-size: 28px;
+    font-weight: 500;
+    z-index: 1;
+}
+.h13 span{
+    font-weight: bolder;
+}
+.xian13{
+    width: 10px;
+    height: 5px;
+    background: white;
+    transform: scale(1,1);
+    position: absolute;
+    top:25%;
+    left:11%;
+    transition: transform 0.4s;
+    transform-origin: left;
+    z-index: 1;
+}
+.p13{
+    position: absolute;
+    top:35%;
+    right: -85%;
+    font-size: 20px;
+    transition: right 0.4s;
+    z-index: 1;
+}
+.mc13{
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: 0.1;
+    position: absolute;
+    top:0;
+    transition: opacity 0.6s;
+}
+ul li:hover .xian13{
+    transform: scale(37,1);
+}
+ul li:hover .p13{
+    right: 8%;
+}
+ul li:hover .mc13{
+    opacity: 0.3;
+}
+ul li:nth-child(14){
+    color: white;
+    text-align: center;
+}
+ul li:nth-child(14) h2{
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    top:20%;
+    left:33%;
+    z-index: 1;
+}
+ul li:nth-child(14) h2 span{
+    font-weight: bolder;
+}
+.kuang14{
+    width: 80%;
+    height: 300px;
+    border:1px solid white;
+    position: absolute;
+    top:10%;
+    left:10%;
+    opacity: 0;
+    transform: scale(1);
+    transition: all 0.6s;
+    z-index: 1;
+}
+.kuang14 p{
+    margin-top: 35%;
+    font-weight: bolder;
+
+}
+.img14{
+    width: 120%;
+    height: 120%;
+    transform: scale(1.2);
+    transition: transform 0.6s;
+}
+.mc14{
+    width: 100%;
+    height: 100%;
+    background: #4f7f90;
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+    transition: opacity 0.6s;
+}
+ul li:hover .kuang14{
+    opacity: 1;
+    transform: scale(0.9);
+}
+ul li:hover .img14{
+    transform: scale(1);
+}
+ul li:hover .mc14{
+    opacity: 0.4;
+}
+ul li:nth-child(15){
+    color: white;
+    font-size: 27px;
+}
+ul li:nth-child(15) h2{
+    font-weight: 400;
+    position: absolute;
+    bottom:5%;
+    right: 5%;
+    z-index: 1;
+}
+ul li:nth-child(15) h2 span{
+    font-weight: bolder;
+}
+.p15{
+    border-right: 1px solid white;
+    position: absolute;
+    top:8%;
+    left:3%;
+    font-size: 15px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.mc15{
+    width: 100%;
+    height: 100%;
+    background: #4f7f90;
+    position: absolute;
+    top:0;
+    opacity: 0.3;
+    transition: opacity 0.6s;
+}
+ul li:hover .p15{
+    left:5%;
+    opacity: 1;
+}
+ul li:hover .mc15{
+    opacity: 0.5;
+}
+ul li:hover .img15{
+    transform: scale(1);
+}
+.img15{
+   width: 120%;
+    height: 120%;
+    transform: scale(1.2);
+    transition:transform 0.6s;
+    transform-origin: right;
+}
+
+
+
+
